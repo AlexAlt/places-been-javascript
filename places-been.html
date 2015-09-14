@@ -1,0 +1,42 @@
+<html>
+  <head>
+   <link href="https://bootswatch.com/journal/bootstrap.min.css" rel="stylesheet" type="text/css">
+   <link href="css/styles.css" rel="stylesheet" type="text/css">
+   <script src="js/jquery-1.11.3.min.js"></script>
+   <script src="js/scripts.js"></script>
+   <title>All the Places</title>
+  </head>
+  <body>
+    <div class="container">
+    <h1>Welcome to all the places you've been!</h1>
+      <form id ="places-been">
+        <div class="form-group">
+          <label for="locality">Place (location)</label>
+          <input type="text" class="form-control" id="locality">
+        </div>
+        <div class="form-group">
+          <label for="newTimePeriod">Time of Year</label>
+          <input type="text" class="form-control newTimePeriod">
+        </div>
+        <div class="form-group">
+          <label for="newLandmark">Landmarks</label>
+          <input type="text" class="form-control newLandmark">
+        </div>
+
+        <button type="submit" class="btn">Add</button>
+
+      </form>
+
+      <ul id="places">
+      </ul>
+
+      <div id ="show-details">
+        <h2></h2>
+        <p>Locality: <span class="locality"></span></p>
+        <p>Time Period: <span class="timePeriod"></span></p>
+        <p>Landmark(s): <span class="landmark"></span></p>
+      </div>
+
+    </div>
+  </body>
+</html>
