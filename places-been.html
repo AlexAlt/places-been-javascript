@@ -7,11 +7,11 @@
    <title>All the Places</title>
   </head>
   <body>
-    <center>
     <div class="container">
       <br>
       <div class="jumbotron">
-      <h1>Welcome to all the places you've been!</h1>
+        <h1>Welcome to all the places you've been!</h1>
+        <br>
         <form id ="places-been">
           <div class="form-group">
             <label for="locality">Place (location)</label>
@@ -21,26 +21,32 @@
             <label for="newTimePeriod">Time of Year</label>
             <input type="text" class="form-control newTimePeriod">
           </div>
-          <div class="form-group">
-            <label for="newLandmark">Landmarks</label>
-            <input type="text" class="form-control newLandmark">
+
+          <div id="newLandmarks">
+            <div class="form-group new-landmark">
+              <label for="newLandmark">Landmarks</label>
+              <input type="text" class="form-control newLandmark">
+            </div>
           </div>
 
-          <button type="submit" class="btn">Add</button>
+          <span class="btn btn-primary" id="add-landmark">Another Landmark</span>
+          <button type="submit" class="btn-info">Add</button>
 
         </form>
 
-      <ul id="places">
-      </ul>
 
-      <div id ="show-details">
-        <h2></h2>
-        <p>Locality: <span class="locality"></span></p>
-        <p>Time Period: <span class="timePeriod"></span></p>
-        <p>Landmark(s): <span class="landmark"></span></p>
-      </div>
-    </center>
+        <ul id="places">
+        </ul>
+
+        <div id ="show-details">
+          <h2></h2>
+          <p>Locality: <span class="locality"></span></p>
+          <p>Time Period: <span class="timePeriod"></span></p>
+          <p>Landmark(s): <ul class="landmark"></ul></p>
+        </div>
+
       </div>
     </div>
+
   </body>
 </html>
