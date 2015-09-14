@@ -11,9 +11,13 @@ $(document).ready(function() {
 
     $("ul#places").append("<li><span class='place'>" + newPlace.locality + "</span></li>");
 
-    $(".place").last.click(function(){
-      
-    })
+    $(".place").last().click(function(){
+      $("#show-details").show();
+      $("#show-details h2").text(newPlace.locality);
+      $(".locality").text(newPlace.locality);
+      $(".timePeriod").text(newPlace.timePeriod);
+      $(".landmark").text(newPlace.landmark);
+    });
 
     $("input#locality").val("");
     $("input.newTimePeriod").val("");
